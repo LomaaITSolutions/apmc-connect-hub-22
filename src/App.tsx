@@ -13,6 +13,7 @@ import InAbsentiaRegistration from "./pages/InAbsentiaRegistration";
 import InAbsentiaAffidavit from "./pages/InAbsentiaAffidavit";
 import GoodStandingCertificate from "./pages/GoodStandingCertificate";
 import TemporaryPermission from "./pages/TemporaryPermission";
+import NOCApplication from "./pages/NOCApplication";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/in-absentia-affidavit" element={<InAbsentiaAffidavit />} />
           <Route path="/good-standing-certificate" element={<GoodStandingCertificate />} />
           <Route path="/temporary-permission" element={<TemporaryPermission />} />
+          <Route path="/noc-application" element={<NOCApplication />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

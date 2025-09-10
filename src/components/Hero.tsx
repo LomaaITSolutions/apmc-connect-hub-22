@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Shield, FileText, RefreshCw, FileCheck } from "lucide-react";
 import heroImage from "@/assets/medical-hero-bg.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const stats = [
     { number: "25,000+", label: "Registered Doctors" },
     { number: "13", label: "Districts Covered" },
@@ -104,6 +106,7 @@ const Hero = () => {
                 <Card
                   key={index}
                   className="bg-white/95 backdrop-blur-sm hover:bg-white transition-all duration-300 transform hover:scale-105 cursor-pointer group"
+                  onClick={() => service.title === "Apply for NOC" ? navigate("/noc-application") : undefined}
                 >
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4">
