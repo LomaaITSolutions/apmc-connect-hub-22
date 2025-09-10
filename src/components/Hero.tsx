@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Shield, FileText, RefreshCw } from "lucide-react";
+import { ArrowRight, Shield, FileText, RefreshCw, FileCheck } from "lucide-react";
 import heroImage from "@/assets/medical-hero-bg.jpg";
 
 const Hero = () => {
@@ -28,6 +28,12 @@ const Hero = () => {
       title: "License Renewal",
       description: "Renew your medical license and certifications",
       color: "bg-green-600",
+    },
+    {
+      icon: FileCheck,
+      title: "Apply for NOC",
+      description: "Get No Objection Certificate for medical practice",
+      color: "bg-purple-600",
     },
   ];
 
